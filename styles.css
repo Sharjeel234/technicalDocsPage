@@ -225,7 +225,7 @@ html
     color: var(--color-white);
     font-size: 35px;
     cursor: pointer;
-    padding: 155px 0;
+    padding: 100px 0;
     transition: var(--transition1);
 }
 
