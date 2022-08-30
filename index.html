@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bxl-react'></i>
+            <span class="logo-name">ReactJS</span>
+        </div>
+        <ul class="nav-links">
+            <li class="list active">
+                <div class="icon-link">
+                    <a href="#">
+                        <i class='bx bx-code-alt'></i>
+                        <span class="link-name">Introduction</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link-name" href="">Introduction</a></li>
+                    <li><a class="sublist active" href="#start">Getting Started</a></li>
+                    <li><a class="sublist" href="#add">Add React to a Website</a></li>
+                    <li><a class="sublist" href="#create">Create a New React App</a></li>
+                    <li><a class="sublist" href="#cdn">CDN Links</a></li>
+                </ul>
+            </li>
+            <li class="list">
+                <div class="icon-link">
+                    <a href="#">
+                        <i class='bx bxs-component'></i>
+                        <span class="link-name">Main Concept</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link-name" href="">Main Concept</a></li>
+                    <li><a class="sublist" href="#hello">Hello World</a></li>
+                    <li><a class="sublist" href="#jsx">Introducing JSX</a></li>
+                    <li><a class="sublist" href="#render">Rendering Element</a></li>
+                    <li><a class="sublist" href="#list">Lists and Keys</a></li>
+                    <li><a class="sublist" href="#form">Forms</a></li>
+                </ul>
+            </li>
+            <li class="list">
+                <div class="icon-link">
+                    <a href="#">
+                        <i class='bx bx-analyse'></i>
+                        <span class="link-name">Advanced Guide</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link-name" href="">Advanced Guide</a></li>
+                    <li><a class="sublist" href="#access">Accessibillty</a></li>
+                    <li><a class="sublist" href="#split">Code-Splitting</a></li>
+                    <li><a class="sublist" href="#context">Context</a></li>
+                    <li><a class="sublist" href="#fragment">Fragments</a></li>
+                </ul>
+            </li>
+            <li class="list">
+                <div class="icon-link">
+                    <a href="#">
+                        <i class='bx bx-git-compare'></i>
+                        <span class="link-name">Hooks</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link-name" href="">Hooks</a></li>
+                    <li><a class="sublist" href="#intro">Introducing Hooks</a></li>
+                    <li><a class="sublist" href="#state">Using the State Hooks</a></li>
+                    <li><a class="sublist" href="#effect">Using the Effect Hooks</a></li>
+                    <li><a class="sublist" href="#rule">Rules of Hooks</a></li>
+                </ul>
+            </li>
+            <li class="list">
+                <div class="icon-link">
+                    <a href="#">
+                        <i class='bx bx-terminal'></i>
+                        <span class="link-name">Testing</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link-name" href="">Testing</a></li>
+                    <li><a class="sublist" href="#over">Testing Overview</a></li>
+                    <li><a class="sublist" href="#envir">Testing Envirnoments</a></li>
+                </ul>
+            </li>
+            <li class="list">
+                <div class="icon-link">
+                    <a href="#">
+                        <i class='bx bx-network-chart'></i>
+                        <span class="link-name">Contributing</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link-name" href="">Contributing</a></li>
+                    <li><a class="sublist" href="#contribute">How to Contribute</a></li>
+                </ul>
+            </li>
+            <li class="list">
+                <div class="icon-link">
+                    <a href="#">
+                        <i class='bx bxs-chat'></i>
+                        <span class="link-name">FAQ</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link-name" href="">FAQ</a></li>
+                    <li><a class="sublist" href="#babel">Babel, JSX and Build Steps</a></li>
+                    <li><a class="sublist" href="#file">File Structure</a></li>
+                </ul>
+            </li>
+            <i class='bx bx-menu'></i>
+        </ul>
+    </div>
+
+    <!-- Main Section -->
+    <section class="home-section">
+        <div class="home-content">
+            <h1 id="start" class="text">Getting Started</h1>
+            <p class="muted">This page is an overview of the React documentation and related resources.</p>
+            <p><span class="bold">React</span> is a JavaScript library for building user interfaces. Learn what React is
+                all about on <span class="text-highlight">our homepage</span> or <span class="text-highlight">in the
+                    tutorial</span>.</p>
+            <div class="break">
+                <hr>
+            </div>
+            <ul>
+                <li><span class="text-highlight">Try React</span></li>
+                <li><span class="text-highlight">Learn React</span></li>
+                <li><span class="text-highlight">Staying Informed</span></li>
+                <li><span class="text-highlight">Versioned Documentation</span></li>
+                <li><span class="text-highlight">Something Missing?</span></li>
+            </ul>
+            <div class="break">
+                <hr>
+            </div>
+            <h2 class="text1">Try React</h2>
+            <p>React has been designed from the start for gradual adoption, and <span class="bold">you can use as little
+                    or as much React as you need.</span> Whether you want to get a taste of React, add some
+                interactivity to a simple HTML page, or start a complex React-powered app, the links in this section
+                will help you get started.</p>
+            <h2 class="text1">Online Playground</h2>
+            <p>If you're interested in playing around with React, you can use an online code playground. Try a Hello
+                World template on <a class="text-highlight" href="https://codepen.io/pen/">CodePen</a>, <a
+                    href="https://codesandbox.io/s/new" class="text-highlight">CodeSandbox</a>, or <a
+                    href="https://stackblitz.com/edit/react-evpuef?file=src%2FApp.js"
+                    class="text-highlight">Stackblitz</a>.</p>
+            <p>If you prefer to use your own text editor, you can also <a
+                    href="https://raw.githubusercontent.com/reactjs/reactjs.org/main/static/html/single-file-example.html"
+                    class="text-highlight">download this HTML file</a>, edit it, and open it from the local filesystem
+                in your browser. It does a slow runtime code transformation, so we'd only recommend using this for
+                simple demos.</p>
+
+            <div class="break">
+                <hr>
+            </div>
+            <h1 id="add" class="text">Add React to a Website</h1>
+            <p class="muted">Use as little or as much React as you need.</p>
+            <p>React has been designed from the start for gradual adoption, and <span class="bold">you can use as little
+                    or as much React as you need.</span> Perhaps you only want to add some “sprinkles of interactivity”
+                to an existing page. React components are a great way to do that.</p>
+            <p>The majority of websites aren't, and don't need to be, single-page apps. With <span class="bold">a few
+                    lines of code and no build tooling</span>, try React in a small part of your website. You can then
+                either gradually expand its presence, or keep it contained to a few dynamic widgets.</p>
+
+            <div class="break">
+                <hr>
+            </div>
+            <ul>
+                <li><span class="text-highlight">Add React in One Minute</span></li>
+                <li><span class="text-highlight">Optional: Try React with JSX</span></li>
+            </ul>
+            <div class="break">
+                <hr>
+            </div>
+
+            <h2 class="text1">Add React in One Minute</h2>
+            <p>In this section, we will show how to add a React component to an existing HTML page. You can follow along
+                with your own website, or create an empty HTML file to practice.</p>
+            <p>There will be no complicated tools or install requirements — <span class="bold">to complete this section,
+                    you only need an internet connection, and a minute of your time.</span></p>
+            <p>Optional: <a
+                    href="https://gist.github.com/gaearon/6668a1f6986742109c00a581ce704605/archive/87f0b6f34238595b44308acfb86df6ea43669c08.zip"
+                    class="text-highlight">Download the full example (2KB zipped)</a></p>
+
+            <h2 class="text1">Step 1: Add a DOM Container to the HTML</h2>
+            <p>First, open the HTML page you want to edit. Add an empty <code class="text-highlight1">< div ></code> tag
+                to mark the spot where you want to display something with React. For example:</p>
+            <pre class="pre">
+                <code>
+                    <span class="comment"><span><</span>!-- ... existing HTML ... --></span>
+                    <span class="token"><span class="comment"><</span>div <span class="attr-name">id</span>=<span class="text-attr">"like_button_container"</span><span class="comment">></span><span class="comment"><</span>/div<span class="comment">></span></span>
+                    <span class="comment"><span><</span>!-- ... existing HTML ... --></span>
+                </code>
+            </pre>
+            <p>We gave this <code class="text-highlight1">< div ></code> a unique <code
+                    class="text-highlight1">id</code> HTML attribute. This will allow us to find it from the JavaScript
+                code later and display a React component inside of it.</p>
+
+            <h2 class="text1">Step 2: Add the Script Tags</h2>
+            <p>Next, add three <span class="text-highlight1"> <code><</code><code> script </code> <code>></code></span>
+                tags to the HTML page right before the closing <code class="text-highlight1">< /body ></code> tag:</p>
+
+            <pre class="pre">
+            <code>
+                <span class="comment"><span><</span>!-- ... other HTML ... --></span>
+                <span class="comment"><span><</span>!-- Load React. --></span>
+                <span class="comment"><span><</span>!-- Note: when deploying, replace "development.js" with "production.min.js". --></span>
+                <span class="token"><span class="comment"><</span>script <span class="attr-name">src</span>=<span class="text-attr">"https://unpkg.com/react@18/umd/react.development.js"</span> <span class="attr-name">crossorigin</span> <span class="comment">></span><span class="comment"><</span>/script<span class="comment">></span></span>
+                <span class="token"><span class="comment"><</span>script <span class="attr-name">src</span>=<span class="text-attr">"https://unpkg.com/react-dom@18/umd/react-dom.development.js"</span> <span class="attr-name">crossorigin</span> <span class="comment">></span><span class="comment"><</span>/script<span class="comment">></span></span>
+                <span class="comment"><span><</span>!-- Load our React component. --></span>
+                <span class="token"><span class="comment"><</span>script <span class="attr-name">src</span>=<span class="text-attr">"like_button.js"</span> <span class="attr-name">crossorigin</span> <span class="comment">></span><span class="comment"><</span>/script<span class="comment">></span></span>
+                <span class="token"><span class="comment"><</span>/body<span class="comment">></span></span>
+            </code>
+        </pre>
+            <p>The first two tags load React. The third one will load your component code.</p>
+
+            <h2 class="text1">Step 3: Create a React Component</h2>
+            <p>Create a file called <span class="text-highlight1">like_button.js</span> next to your HTML page.</p>
+            <p>Open <a
+                    href="https://gist.githubusercontent.com/gaearon/0b180827c190fe4fd98b4c7f570ea4a8/raw/b9157ce933c79a4559d2aa9ff3372668cce48de7/LikeButton.js"
+                    class="text-highlight bold">this starter code</a> and paste it into the file you created.</p>
+            <p>After <a
+                    href="https://gist.githubusercontent.com/gaearon/0b180827c190fe4fd98b4c7f570ea4a8/raw/b9157ce933c79a4559d2aa9ff3372668cce48de7/LikeButton.js"
+                    class="text-highlight bold">the starter code</a>, add three lines to the bottom of <span
+                    class="text-highlight1">like_button.js</span>:</p>
+            <pre class="pre">
+            <code>
+                <span class="comment">// ... the starter code you pasted ...</span>
+                <span class="token">const <span class="comment">domContainer = document</span>.<span class="attr-name">querySelector</span>(<span class="text-attr">'#like_button_container'</span>);</span>
+                <span class="token">const <span class="comment">root = ReactDOM</span>.<span class="attr-name">createRoot</span>(<span class="comment">domContainer</span>);</span>
+                <span class="token"><span class="comment">root</span>.<span class="attr-name">render</span>(<span class="attr-name">e</span>(<span class="comment">LikeButton</span>));</span>
+            </code>
+        </pre>
+            <p>These three lines of code find the <span class="text-highlight1">
+                    < div>
+                </span> we added to our HTML in the first step, create a React app with it, and then display our “Like”
+                button React component inside of it.</p>
+            <h2 class="text1">That's it!</h2>
+
+            <div class="break">
+                <hr>
+            </div>
+
+            <h1 id="create" class="text">Create a New React App</h1>
+            <p class="muted">Use an integrated toolchain for the best user and developer experience.</p>
+            <p>This page describes a few popular React toolchains which help with tasks like:</p>
+            <ul>
+                <li>Scaling to many files and components.</li>
+                <li>Using third-party libraries from npm.</li>
+                <li>Detecting common mistakes early.</li>
+                <li>Live-editing CSS and JS in development.</li>
+                <li>Optimizing the output for production.</li>
+            </ul>
+            <p>The toolchains recommended on this page <span class="bold">don't require configuration to get
+                    started.</span></p>
+            <div class="break">
+                <hr>
+            </div>
+
+            <h2 class="text1">You Might Not Need a Toolchain</h2>
+            <p>If you don't experience the problems described above or don't feel comfortable using JavaScript tools
+                yet, consider <a href="" class="text-highlight">adding React as a plain
+                    <code><</code><code> script </code> <code>></code> tag on an HTML page</a>, optionally with JSX.</p>
+            <p>This is also <span class="bold">the easiest way to integrate React into an existing website</span>. You
+                can always add a larger toolchain if you find it helpful!</p>
+            <div class="break">
+                <hr>
+            </div>
+            <h2 class="text1">Recommended Toolchains</h2>
+            <p>The React team primarily recommends these solutions:</p>
+            <ul>
+                <li>If you're learning React or creating a new single-page app, use Create React App.</li>
+                <li>If you're building a server-rendered website with Node.js, try Next.js.</li>
+                <li>If you're building a static content-oriented website, try Gatsby.</li>
+                <li>If you're building a component library or integrating with an existing codebase, try More Flexible
+                    Toolchains.</li>
+            </ul>
+            <h2 class="text1">Create React App</h2>
+            <p><a href="https://github.com/facebook/create-react-app" class="text-highlight">Create React App</a> is a
+                comfortable environment for <span class="bold">learning React</span>, and is the best way to start
+                building <span class="bold">a new single-page application</span> in React.</p>
+            <p>It sets up your development environment so that you can use the latest JavaScript features, provides a
+                nice developer experience, and optimizes your app for production. You'll need to have <a
+                    href="https://nodejs.org/en/" class="text-highlight">Node >= 14.0.0 and npm >= 5.6</a> on your
+                machine. To create a project, run:</p>
+
+            <pre class="pre">
+            <code>
+                <span class="comment">npx create-react-app my-app</span>
+                <span class="token">cd <span class="comment">my-app</span></span>
+                <span class="attr-name">npm <span class="comment">start</span></span>
+            </code>
+        </pre>
+            <p>Create React App doesn't handle backend logic or databases; it just creates a frontend build pipeline, so
+                you can use it with any backend you want. Under the hood, it uses <a href="https://babeljs.io/"
+                    class="text-highlight">Babel</a> and <a href="https://webpack.js.org/"
+                    class="text-highlight">webpack</a>, but you don't need to know anything about them.</p>
+            <p>When you're ready to deploy to production, running <code class="text-highlight1">npm run build</code>
+                will create an optimized build of your app in the <code class="text-highlight1">build</code> folder. You
+                can learn more about Create React App <a
+                    href="https://github.com/facebook/create-react-app#create-react-app--" class="text-highlight">from
+                    its README</a> and the <a href="https://create-react-app.dev/" class="text-highlight">User
+                    Guide</a>.</p>
+            <div class="break">
+                <hr>
+            </div>
+
+            <h1 id="cdn" class="text">CDN Links</h1>
+            <p class="muted">Both React and ReactDOM are available over a CDN.</p>
+            <pre class="pre">
+            <code>
+                <span class="token"><span class="comment"><</span>script <span class="attr-name">crossorigin</span> <span class="attr-name">src</span>=<span class="text-attr">"https://unpkg.com/react@18/umd/react.development.js"</span> <span class="comment">></span><span class="comment"><</span>/script<span class="comment">></span></span>
+                <span class="token"><span class="comment"><</span>script <span class="attr-name">crossorigin</span> <span class="attr-name">src</span>=<span class="text-attr">"https://unpkg.com/react-dom@18/umd/react-dom.development.js"</span> <span class="comment">></span><span class="comment"><</span>/script<span class="comment">></span></span>
+            </code>
+        </pre>
+
+            <p>The versions above are only meant for development, and are not suitable for production. Minified and
+                optimized production versions of React are available at:</p>
+
+            <pre class="pre">
+            <code>
+                <span class="token"><span class="comment"><</span>script <span class="attr-name">crossorigin</span> <span class="attr-name">src</span>=<span class="text-attr">"https://unpkg.com/react@18/umd/react.production.min.js"</span> <span class="comment">></span><span class="comment"><</span>/script<span class="comment">></span></span>
+                <span class="token"><span class="comment"><</span>script <span class="attr-name">crossorigin</span> <span class="attr-name">src</span>=<span class="text-attr">"https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"</span> <span class="comment">></span><span class="comment"><</span>/script<span class="comment">></span></span>
+            </code>
+        </pre>
+            <p>To load a specific version of <span class="text-highlight1">react</span> and <span
+                    class="text-highlight1">react-dom</span>, replace <span class="text-highlight1">18</span> with the
+                version number.</p>
+
+            <h2 class="text1">Why the crossorigin Attribute?</h2>
+            <p>If you serve React from a CDN, we recommend to keep the
+                <code><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/crossorigin" class="text-highlight">crossorigin</a></code>
+                attribute set:</p>
+            <pre class="pre">
+            <code>
+                <span class="token"><span class="comment"><</span>script <span class="attr-name">crossorigin</span> <span class="attr-name">src</span>=<span class="text-attr">"..."</span> <span class="comment">></span><span class="comment"><</span>/script<span class="comment">></span></span>
+            </code>
+        </pre>
+            <p>We also recommend to verify that the CDN you are using sets the <code
+                    class="text-highlight1">Access-Control-Allow-Origin: *</code> HTTP header:</p>
+            <div class="img">
+                <img src="cdn.png" alt="CDN">
+            </div>
+            <p>This enables a better <a href="https://reactjs.org/blog/2017/07/26/error-handling-in-react-16.html"
+                    class="text-highlight">error handling experience</a> in React 16 and later.</p>
+
+            <div class="break">
+                <hr>
+            </div>
+
+            <h1 id="hello" class="text">Hello World</h1>
+            <p class="muted">The smallest React example looks like this:</p>
+            <pre class="pre">
+            <code>
+                <span class="token">const <span class="comment">root = ReactDOM</span>.<span class="attr-name">createRoot</span>(<span class="comment">document</span>.<span class="attr-name">getElementById</span>(<span class="text-attr">'root'</span>));</span>
+                <span class="token"><span class="comment">root</span>.<span class="attr-name">render</span>(<span class="comment"><</span>h1<span class="comment">> Hello, World </span><span class="comment"><</span><span class="token">/h1</span><span class="comment">></span> );</span>
+            </code>
+        </pre>
+            <p>It displays a heading saying “Hello, world!” on the page.</p>
+            <p><span class="bold"><a href="https://codepen.io/gaearon/pen/MjrdWg?editors=1010"
+                        class="text-highlight">Try it on CodePen</a></span></p>
+            <p>Click the link above to open an online editor. Feel free to make some changes, and see how they affect
+                the output. Most pages in this guide will have editable examples like this one.</p>
+
+            <div class="break">
+                <hr>
+            </div>
+
+            <h1 id="jsx" class="text">Intrroducing JSX</h1>
+            <p class="muted">Consider this variable declaration:</p>
+            <pre class="pre">
+            <code>
+                <span class="token">const <span class="comment">element = </span><span class="comment"><</span>h1<span class="comment">> Hello, World </span><span class="comment"><</span><span class="token">/h1</span><span class="comment">>;</span></span>
+            </code>
+        </pre>
+
+            <p>This funny tag syntax is neither a string nor HTML.</p>
+            <p>It is called JSX, and it is a syntax extension to JavaScript. We recommend using it with React to
+                describe what the UI should look like. JSX may remind you of a template language, but it comes with the
+                full power of JavaScript.</p>
+            <p>JSX produces React “elements”. We will explore rendering them to the DOM in the <a class="text-highlight"
+                    href="#render">next section</a>. Below, you can find the basics of JSX necessary to get you started.
+            </p>
+
+            <h2 class="text1">Why JSX?</h2>
+            <p>React embraces the fact that rendering logic is inherently coupled with other UI logic: how events are
+                handled, how the state changes over time, and how the data is prepared for display.</p>
+            <p>Instead of artificially separating technologies by putting markup and logic in separate files, React
+                separates concerns with loosely coupled units called “components” that contain both. We will come back
+                to components in a further section, but if you're not yet comfortable putting markup in JS, this talk
+                might convince you otherwise.</p>
+            <p>React doesn't require using JSX, but most people find it helpful as a visual aid when working with UI
+                inside the JavaScript code. It also allows React to show more useful error and warning messages.</p>
+            <p>With that out of the way, let's get started!</p>
+
+            <h2 class="text1">Embedding Expressions in JSX</h2>
+            <p>In the example below, we declare a variable called <code class="text-highlight1">name</code> and then use
+                it inside JSX by wrapping it in curly braces:</p>
+            <pre class="pre">
+            <code>
+                <span class="token">const <span class="comment">name = </span> <span class="text1-attr">'Josh Perez'</span>;</span>
+                <span class="token">const <span class="comment">element = </span><span class="comment"><</span>h1<span class="comment">> Hello, </span>{<span class="comment">name</span>}<span class="comment"><</span><span class="token">/h1</span><span class="comment">></span>;</span>
+            </code>
+        </pre>
+            <p>You can put any valid JavaScript expression inside the curly braces in JSX. For example, <span
+                    class="text-highlight1">2 + 2</span>, <span class="text-highlight1">user.firstName</span>, or <span
+                    class="text-highlight1">formatName(user)</span> are all valid JavaScript expressions.</p>
+            <p>In the example below, we embed the result of calling a JavaScript function, <span
+                    class="text-highlight1">formatName(user)</span>, into an <code class="text-highlight1">< h1 ></code>
+                element.</p>
+
+            <pre class="pre">
+            <code>
+                <span class="token">function <span class="attr-name">formatName</span>(<span class="comment">user</span>)  {<br> &emsp;&emsp;return <span class="comment">user</span>.<span class="comment">firstName + </span> '' <span class="comment"> + user</span>.<span class="comment">lastName</span>;<br>}</span>
+                <span class="token">const <span class="comment">user = </span>{<br>&emsp;&emsp;<span class="attr-name">firstName:</span>
+                <span class="text1-attr">'Harper'</span>,<br>&emsp;&emsp;<span class="attr-name">lastName:</span>
+                <span class="text1-attr">'Perez'</span><br> };</span>
+                <span class="token">const <span class="comment">element = </span>(<br>&emsp;&emsp;<span class="comment"><</span>h1<span class="comment">> <br> &emsp;&emsp;&emsp;Hello, </span>{<span class="attr-name">formatName</span>(<span class="comment">user</span>)}<span class="comment"><br>&emsp;&emsp;<</span><span class="token">/h1</span><span class="comment">></span><br>);</span>
+            </code>
+        </pre>
+
+            <p><span class="bold"><a href="https://codepen.io/gaearon/pen/MjrdWg?editors=1010"
+                        class="text-highlight">Try it on CodePen</a></span></p>
+            <p>We split JSX over multiple lines for readability. While it isn't required, when doing this, we also
+                recommend wrapping it in parentheses to avoid the pitfalls of <a
+                    href="https://stackoverflow.com/q/2846283" class="text-highlight">automatic semicolon insertion</a>.
+            </p>
+
+            <div class="break">
+                <hr>
+            </div>
+
+            <h1 id="render" class="text">Rendering Elements</h1>
+            <p class="muted">Elements are the smallest building blocks of React apps.</p>
+            <p>An element describes what you want to see on the screen:</p>
+            <pre class="pre">
+            <code>
+                <span class="token">const <span class="comment">element = </span><span class="comment"><</span>h1<span class="comment">> Hello, World </span><span class="comment"><</span><span class="token">/h1</span><span class="comment">>;</span></span>
+            </code>
+        </pre>
+            <p>Unlike browser DOM elements, React elements are plain objects, and are cheap to create. React DOM takes
+                care of updating the DOM to match the React elements.</p>
+
+            <div class="break">
+                <hr>
+            </div>
+
+            <h2 class="text1">Rendering an Element into the DOM</h2>
+            <p>Let's say there is a <code class="text-highlight1">< div ></code> somewhere in your HTML file:</p>
+            <pre class="pre">
+                <code>
+                    <span class="token"><span class="comment"><</span>div <span class="attr-name">id</span>=<span class="text-attr">"root"</span><span class="comment">></span><span class="comment"><</span>/div<span class="comment">></span></span>
+                </code>
+            </pre>
+            <p>We call this a “root” DOM node because everything inside it will be managed by React DOM.</p>
+            <p>Applications built with just React usually have a single root DOM node. If you are integrating React into
+                an existing app, you may have as many isolated root DOM nodes as you like.</p>
+            <p>To render a React element, first pass the DOM element to ReactDOM.createRoot(), then pass the React
+                element to <code class="text-highlight1">root.render()</code>:</p>
+            <pre class="pre">
+                <code>
+                    <span class="token">const <span class="comment">root = ReactDOM</span>.<span class="attr-name">createRoot</span>(<br>&emsp;&emsp;<span class="comment">document</span>.<span class="attr-name">getElementById</span>(<span class="text-attr">'root'</span>)<br>);</span>
+                    <span class="token">const <span class="comment">element = </span><span class="comment"><</span>h1<span class="comment">> Hello, World </span><span class="comment"><</span><span class="token">/h1</span><span class="comment">>;</span></span>
+                    <span class="token"><span class="comment">root</span>.<span class="attr-name">render</span>(<span class="comment">element</span>);</span>
+                </code>
+            </pre>
+            <p>It displays “Hello, world” on the page.</p>
+            <div class="break">
+                <hr>
+            </div>
+            <h1 class="text" id="list">Lists and Keys</h1>
+            <p class="muted">First, let's review how you transform lists in JavaScript.</p>
+            <p>Usually you would render lists inside a component.</p>
+            <p>We can refactor the previous example into a component that accepts an array of <code
+                    class="text-highlight1">numbers</code> and outputs a list of elements.</p>
+
+            <pre class="pre">
+                <code>
+                    <span class="token">function <span class="attr-name">NumberList</span>(<span class="comment">props</span>)  {<br> &emsp;&emsp;const <span class="comment">numbers = props</span>.<span class="comment">numbers</span>;<br>&emsp;&emsp;const <span class="comment">listItems = numbers</span>.<span class="attr-name">map</span>((<span class="comment">number</span>)<span class="comment"> =></span><br>&emsp;&emsp;&emsp;<span class="comment"><</span>li<span class="comment">></span>{<span class="comment">number</span>}<span class="comment"><</span>li<span class="comment">></span><br>&emsp;&emsp;);<br>&emsp;&emsp;return (<br>&emsp;&emsp;&emsp;<span class="comment"><</span>ul<span class="comment">></span>{<span class="comment">listItems</span>}<span class="comment"><</span>ul<span class="comment">></span><br>&emsp;&emsp;);<br>}<br><br>const <span class="comment">numbers = </span>[<span class="number">1,2,3,4</span>];<br>const <span class="comment">root = ReactDOM</span>.<span class="attr-name">createRoot</span>(<span class="comment">document</span>.<span class="attr-name">getElementById</span>(<span class="text-attr">'root'</span>));<br><span class="comment">root</span>.<span class="attr-name">render</span>(<span class="comment"><</span><span class="attr-name">NumberList </span>numbers = {<span class="text-attr">numbers</span>} / <span class="comment">></span>);</span>
+                </code>
+            </pre>
+            <p>When you run this code, you'll be given a warning that a key should be provided for list items.</p>
+            <p>A “key” is a special string attribute you need to include when creating lists of elements. We'll discuss
+                why it's important in the next section.</p>
+            <p>Let's assign a <code class="text-highlight1">key</code> to our list items inside <code
+                    class="text-highlight1">numbers.map()</code> and fix the missing key issue.</p>
+            <pre class="pre">
+                <code>
+                    <span class="token">function <span class="attr-name">NumberList</span>(<span class="comment">props</span>)  {<br> &emsp;&emsp;const <span class="comment">numbers = props</span>.<span class="comment">numbers</span>;<br>&emsp;&emsp;const <span class="comment">listItems = numbers</span>.<span class="attr-name">map</span>((<span class="comment">number</span>)<span class="comment"> =></span><br>&emsp;&emsp;&emsp;<span class="comment"><</span>li <span class="attr-name">key</span> <span class="comment"> =</span>{ number.<span class="text-attr">toString</span>()}<span class="comment">></span><br>&emsp;&emsp;&emsp;&emsp;{<span class="comment">number</span>}<br>&emsp;&emsp;&emsp;<span class="comment"><</span>li<span class="comment">></span><br>&emsp;&emsp;);<br>&emsp;&emsp;return (<br>&emsp;&emsp;&emsp;<span class="comment"><</span>ul<span class="comment">></span>{<span class="comment">listItems</span>}<span class="comment"><</span>ul<span class="comment">></span><br>&emsp;&emsp;);<br>}</span>
+                </code>
+            </pre>
+
+            <div class="break">
+                <hr>
+            </div>
+
+            <h1 id="form" class="text">Forms</h1>
+            <p>HTML form elements work a bit differently from other DOM elements in React, because form elements
+                naturally keep some internal state. For example, this form in plain HTML accepts a single name:</p>
+            <pre class="pre">
+                <code>
+                    <span class="token"><span class="comment"><</span>form<span class="comment">></span><br>&emsp;<span class="comment"><</span>label<span class="comment">></span><br>&emsp;&emsp;<span class="comment">Name:</span><br>&emsp;&emsp;&emsp;<span class="comment"><</span>input <span class="attr-name">type</span><span class="comment"> =</span><span class="text-attr">"text"</span> <span class="attr-name">name</span><span class="comment"> =</span><span class="text-attr">"name"</span> /<span class="comment">></span><br>&emsp;<span class="comment"><</span>/label<span class="comment">></span><br>&emsp;<span class="comment"><</span>input <span class="attr-name">type</span><span class="comment"> =</span><span class="text-attr">"submit"</span> <span class="attr-name">value</span><span class="comment"> =</span><span class="text-attr">"Submit"</span> /<span class="comment">></span><br><span class="comment"><</span>/form<span class="comment">></span></span>
+                </code>
+            </pre>
+            <p>This form has the default HTML form behavior of browsing to a new page when the user submits the form. If
+                you want this behavior in React, it just works. But in most cases, it's convenient to have a JavaScript
+                function that handles the submission of the form and has access to the data that the user entered into
+                the form. The standard way to achieve this is with a technique called “controlled components”.</p>
+
+            <div class="break">
+                <hr>
+            </div>
+
+            <h2 class="text1">Controlled Components</h2>
+            <p>In HTML, form elements such as <code class="text-highlight1">< input ></code>, <code
+                    class="text-highlight1">< textarea ></code>, and <code class="text-highlight1">< select ></code>
+                typically maintain their own state and update it based on user input. In React, mutable state is
+                typically kept in the state property of components, and only updated with setState().</p>
+            <p>We can combine the two by making the React state be the “single source of truth”. Then the React
+                component that renders a form also controls what happens in that form on subsequent user input. An input
+                form element whose value is controlled by React in this way is called a “controlled component”.</p>
+            <p>For example, if we want to make the previous example log the name when it is submitted, we can write the
+                form as a controlled component:</p>
+            <pre class="pre">
+                <code>
+                    <span class="token">class <span class="attr-name">NameForm </span>extends <span class="attr-name">React</span>.<span class="attr-name">Component </span>{<br>&emsp;<span class="text-attr">constructor</span>(<span class="comment">props</span>) {<br>&emsp;&emsp;&emsp;super(<span class="comment">props</span>);<br>&emsp;&emsp;&emsp;this.<span class="comment">state = </span>{<span class="text-attr">value</span><span class="comment">: &nbsp;</span> '&nbsp;'};<br><br>&emsp;&emsp;&emsp;this.<span class="comment">handleChange = </span>this.<span class="text-attr">handleChange</span>.<span class="text-attr">blind</span>(<span class="comment">this</span>);<br>&emsp;&emsp;&emsp;this.<span class="comment">handleSubmit = </span>this.<span class="text-attr">handleSubmit</span>.<span class="text-attr">blind</span>(<span class="comment">this</span>);<br>&emsp;}<br><br>&emsp;<span class="text-attr">handleChange</span>(<span class="comment">event</span>) {<br>&emsp;&emsp;this.<span class="text-attr">setState</span>({<span class="text-attr">value</span><span class="comment">: event</span>.<span class="comment">target</span>.<span class="comment">value</span>});<br>&emsp;}<br><br>&emsp;<span class="text-attr">handleSubmit</span>(<span class="comment">event</span>) {<br>&emsp;&emsp;<span class="text-attr">alert</span>(<span class="comment">"A name was submitted: "</span> + this.<span class="comment">state</span>.<span class="comment">value</span>);<br>&emsp;&emsp;<span class="comment">event</span>.<span class="text-attr">preventDefault</span>();<br>&emsp;} <br>&emsp;<span class="text-attr">render</span>() {<br>&emsp;&emsp;return (<br>&emsp;&emsp;&emsp;<span class="comment"><</span>form <span class="text-attr">onSubmit</span> = { <span class="comment">this</span>.handleSubmit}<span class="comment">></span><br>&emsp;&emsp;&emsp;&emsp;<span class="comment"><</span>label<span class="comment">></span><br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="comment">Name:</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="comment"><</span>input <span class="attr-name">type</span><span class="comment"> =</span><span class="text-attr">"text"</span> <span class="attr-name">value</span> <span class="comment"> =</span>{ <span class="attr-name">this</span>.state.value } <span class="attr-name">onChange</span><span class="comment"> =</span>{<span class="attr-name">this</span>.handleChange} /<span class="comment">></span><br>&emsp;&emsp;&emsp;&emsp;<span class="comment"><</span>/label<span class="comment">></span><br>&emsp;&emsp;&emsp;&emsp;<span class="comment"><</span>input <span class="attr-name">type</span><span class="comment"> =</span><span class="text-attr">"submit"</span> <span class="attr-name">value</span><span class="comment"> =</span><span class="text-attr">"Submit"</span> /<span class="comment">></span><br>&emsp;&emsp;&emsp;<span class="comment"><</span>/form<span class="comment">></span><br>&emsp;&emsp;);<br>&emsp;}<br>}</span>
+                </code>
+            </pre>
+            <p>Since the <code class="text-highlight1">value</code> attribute is set on our form element, the displayed
+                value will always be <code class="text-highlight1">this.state.value</code>, making the React state the
+                source of truth. Since <code class="text-highlight1">handleChange</code> runs on every keystroke to
+                update the React state, the displayed value will update as the user types.</p>
+            <p>With a controlled component, the input's value is always driven by the React state. While this means you
+                have to type a bit more code, you can now pass the value to other UI elements too, or reset it from
+                other event handlers.</p>
+
+            <div class="break">
+                <hr>
+            </div>
+
+            <h1 id="access" class="text">Accessibility</h1>
+            <h2 class="text1">Why Accessibility?</h2>
+            <p>Web accessibility (also referred to as <a href="https://en.wiktionary.org/wiki/a11y"
+                    class="text-highlight">a11y</a>) is the design and creation of websites that can be used by
+                everyone. Accessibility support is necessary to allow assistive technology to interpret web pages.</p>
+            <p>React fully supports building accessible websites, often by using standard HTML techniques.</p>
+
+            <div class="break">
+                <hr>
+            </div>
+
+            <h2 class="text1">Standards and Guidelines</h2>
+            <h2 class="text1">WCAG</h2>
+            <p>The <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" class="text-highlight">Web Content
+                    Accessibility Guidelines</a> provides guidelines for creating accessible web sites.</p>
+            <p>The following WCAG checklists provide an overview:</p>
+            <ul>
+                <li><a href="https://www.wuhcag.com/wcag-checklist/" class="text-highlight">WCAG checklist from
+                        Wuhcag</a></li>
+                <li><a href="https://webaim.org/standards/wcag/checklist" class="text-highlight">WCAG checklist from
+                        WebAIM</a></li>
+                <li><a href="https://www.a11yproject.com/checklist/" class="text-highlight">Checklist from The A11Y
+                        Project
+                    </a></li>
+            </ul>
+
+            <h2 class="text1">WAI-ARIA</h2>
+            <p>The <a href="https://www.w3.org/WAI/standards-guidelines/aria/" class="text-highlight">Web Accessibility
+                    Initiative - Accessible Rich Internet Applications</a> document contains techniques for building
+                fully accessible JavaScript widgets.</p>
+            <p>Note that all <span class="text-highlight1">aria-*</span> HTML attributes are fully supported in JSX.
+                Whereas most DOM properties and attributes in React are camelCased, these attributes should be
+                hyphen-cased (also known as kebab-case, lisp-case, etc) as they are in plain HTML:</p>
+
+            <pre class="pre">
+                <code>
+                    <span class="token"><span class="comment"><</span>input <br>&emsp;<span class="attr-name">type</span> = <span class="text-attr">"text"</span><br>&emsp;<span class="attr-name">aria-label</span> = {<span class="comment">labelText</span>}<br>&emsp;<span class="attr-name">aria-required</span> = <span class="text-attr">"true"</span><br>&emsp;<span class="attr-name">onChange</span> = {<span class="comment">onchangeHandler</span>}<br>&emsp;<span class="attr-name">value</span> = {<span class="comment">inputValue</span>}<br>&emsp;<span class="attr-name">name</span> = <span class="text-attr">"name"</span><br>/<span class="comment">></span></span>
+                </code>
+            </pre>
+
+            <div class="break">
+                <hr>
+            </div>
+
+            <h2 class="text1">Semantic HTML</h2>
+            <p>Semantic HTML is the foundation of accessibility in a web application. Using the various HTML elements to
+                reinforce the meaning of information in our websites will often give us accessibility for free.</p>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" class="text-highlight">MDN HTML
+                        elements reference</a></li>
+            </ul>
+
+            <p>Sometimes we break HTML semantics when we add <code class="text-highlight1">< div ></code>elements to our
+                JSX to make our React code work, especially when working with lists (<code
+                    class="text-highlight1">< ol ></code>, <code class="text-highlight1">< ul ></code> and <code
+                    class="text-highlight1">< dl ></code> and the HTML <code class="text-highlight1">< table ></code>.
+                In these cases we should rather use <a href="#fragment" class="text-highlight">React Fragments</a> to
+                group together multiple elements.</p>
+
+            <div class="break">
+                <hr>
+            </div>
+
+            <h2 class="text1">Notifying the user of errors</h2>
+            <p>Error situations need to be understood by all users. The following link shows us how to expose error
+                texts to screen readers as well:</p>
+            <ul>
+                <li><a href="https://www.w3.org/WAI/tutorials/forms/notifications/" class="text-highlight">The W3C
+                        demonstrates user notifications</a></li>
+                <li><a href="https://webaim.org/techniques/formvalidation/" class="text-highlight">WebAIM looks at form
+                        validation
+                    </a></li>
+            </ul>
+
+            <div class="break">
+                <hr>
+            </div>
+
+            <h2 class="text1">Focus Control</h2>
+            <p>Ensure that your web application can be fully operated with the keyboard only:</p>
+            <ul>
+                <li><a href="https://webaim.org/techniques/keyboard/" class="text-highlight">WebAIM talks about keyboard
+                        accessibility
+                    </a></li>
+            </ul>
+            <h2 class="text1">Keyboard focus and focus outline</h2>
+            <p>Keyboard focus refers to the current element in the DOM that is selected to accept input from the
+                keyboard. We see it everywhere as a focus outline similar to that shown in the following image:</p>
+            <div class="img">
+                <img src="keyboard-focus.png" alt="keyboard-focus">
+            </div>
+
+            <p>Only ever use CSS that removes this outline, for example by setting <span
+                    class="text-highlight1">outline: 0</span>, if you are replacing it with another focus outline
+                implementation.</p>
+
+            <div class="break">
+                <hr>
+            </div>
+
+            <h1 id="split" class="text">Code-Splitting</h1>
+            <h2 class="text1">Bundling</h2>
+            <p>Most React apps will have their files “bundled” using tools like <a href="https://webpack.js.org/"
+                    class="text-highlight">Webpack</a>, <a href="https://rollupjs.org/guide/en/"
+                    class="text-highlight">Rollup</a> or <a href="https://browserify.org/"
+                    class="text-highlight">Browserify</a>. Bundling is the process of following imported files and
+                merging them into a single file: a “bundle”. This bundle can then be included on a webpage to load an
+                entire app at once.</p>
+            <span class="muted" style="padding-left: 20px;">Example</span>
+            <h4><b>App:</b></h4>
+
+            <pre class="pre">
+                <code>
+                    <span class="comment">// app.js</span>
+                    <span class="token">import { <span class="text-attr">add</span> } from <span class="text1-attr">'./math.js'</span>;</span>
+                    <span class="comment">console.<span class="number">log</span>(<span class="text-attr">add</span>(<span class="number">16, 26</span>))&emsp;<span class="comment">// 42</span></span>
+                </code>
+            </pre>
+            <pre class="pre m-1">
+                    <code>
+                        <span class="comment">// math.js</span>
+                        <span class="token">export function <span class="text-attr">add</span> ( <span class="comment">a, b</span> ) { <br>&emsp;&emsp; return <span class="comment">a</span> + <span class="comment">b</span>; <br>}</span>
+                    </code>
+                </pre>
+
+            <h4><b>Bundle:</b></h4>
+
+            <pre class="pre">
+                    <code>
+                        <span class="token">function <span class="text-attr">add</span> ( <span class="comment">a, b</span> ) { <br>&emsp;&emsp; return <span class="comment">a</span> + <span class="comment">b</span>; <br>}</span>
+                        <span class="comment">console.<span class="number">log</span>(<span class="text-attr">add</span>(<span class="number">16, 26</span>))&emsp;<span class="comment">// 42</span></span>
+                    </code>
+                </pre>
+
+            <p>If you're using <a href="https://create-react-app.dev/" class="text-highlight">Create React App</a>, <a
+                    href="https://nextjs.org/" class="text-highlight">Next.js</a>, <a href="https://www.gatsbyjs.com/"
+                    class="text-highlight">Gatsby</a>, or a similar tool, you will have a Webpack setup out of the box
+                to bundle your app.</p>
+            <p>If you aren't, you'll need to set up bundling yourself. For example, see the <a
+                    href="https://webpack.js.org/guides/installation/" class="text-highlight">Installation</a> and <a
+                    href="https://webpack.js.org/guides/getting-started/" class="text-highlight">Getting Started</a>
+                guides on the Webpack docs.</p>
+
+            <div class="break">
+                <hr>
+            </div>
+
+            <h2 class="text1">Code Splitting</h2>
+            <p>Bundling is great, but as your app grows, your bundle will grow too. Especially if you are including
+                large third-party libraries. You need to keep an eye on the code you are including in your bundle so
+                that you don't accidentally make it so large that your app takes a long time to load.</p>
+            <p>To avoid winding up with a large bundle, it's good to get ahead of the problem and start “splitting” your
+                bundle. Code-Splitting is a feature supported by bundlers like <a href="https://webpack.js.org/"
+                    class="text-highlight">Webpack</a>, <a href="https://rollupjs.org/guide/en/"
+                    class="text-highlight">Rollup</a> and Browserify (via <a
+                    href="https://github.com/browserify/factor-bundle" class="text-highlight"> factor-bundle</a>) which
+                can create multiple bundles that can be dynamically loaded at runtime.</p>
+            <p>Code-splitting your app can help you “lazy-load” just the things that are currently needed by the user,
+                which can dramatically improve the performance of your app. While you haven't reduced the overall amount
+                of code in your app, you've avoided loading code that the user may never need, and reduced the amount of
+                code needed during the initial load.</p>
+
+            <div class="break">
+                <hr>
+            </div>
+
+            <h1 id="context" class="text">Context</h1>
+            <p class="muted">Context provides a way to pass data through the component tree without having to pass props
+                down manually at every level.</p>
+            <p>In a typical React application, data is passed top-down (parent to child) via props, but such usage can
+                be cumbersome for certain types of props (e.g. locale preference, UI theme) that are required by many
+                components within an application. Context provides a way to share values like these between components
+                without having to explicitly pass a prop through every level of the tree.</p>
+
+            <div class="break">
+                <hr>
+            </div>
+
+            <h2 class="text1">When to Use Context</h2>
+            <p>Context is designed to share data that can be considered “global” for a tree of React components, such as
+                the current authenticated user, theme, or preferred language. For example, in the code below we manually
+                thread through a “theme” prop in order to style the Button component:</p>
+
+            <pre class="pre">
+                    <code>
+                        <span class="token">class <span class="text-attr">add</span> extends <span class="attr-name">React</span>.<span class="attr-name">Component</span> {<br>&emsp;<span class="text-attr">render</span>() { <br>&emsp;&emsp;return <span class="comment"><</span><span class="number">Toolbar</span> <span class="attr-name">theme</span> = <span class="text-attr">"dark"</span> /<span class="comment">></span>;<br>&emsp;}<br>}</span>
+                        <br>
+                        <span class="token">function <span class="attr-name">Toolbar</span>(<span class="comment">props</span>) { <br>&emsp;&emsp;<span class="comment">// The Toolbar component must take an extra "theme" prop</span><br>&emsp;&emsp;<span class="comment">// and pass it to the ThemedButton. This can become painful</span><br>&emsp;&emsp;<span class="comment">// if every single button in the app needs to know the theme</span><br>&emsp;&emsp;<span class="comment">// because it would have to be passed through all components.</span><br>&emsp;&emsp;return (<br>&emsp;&emsp;<span class="comment"><</span>div<span class="comment">></span><br>&emsp;&emsp;&emsp;<span class="comment"><</span><span class="number">ThemedButton</span> <span class="attr-name">theme</span> = { <span class="comment">props</span>.<span class="comment">theme</span> } /<span class="comment">></span><br>&emsp;&emsp;<span class="comment"><</span>div<span class="comment">></span> <br>&emsp;);<br>}</span>
+                        <br>
+                        <span class="token">class <span class="text-attr">ThemedButton</span> extends <span class="attr-name">React</span>.<span class="attr-name">Component</span> {<br>&emsp;<span class="text-attr">render</span>() { <br>&emsp;&emsp;return <span class="comment"><</span><span class="number">Button</span> <span class="attr-name">theme</span> = { this.<span class="comment">props</span>.<span class="comment">theme</span> } /<span class="comment">></span>;<br>&emsp;}<br>}</span>
+                    </code>
+                </pre>
+
+            <div class="break">
+                <hr>
+            </div>
+
+            <h1 id="fragment" class="text">Fragments</h1>
+            <p class="muted">A common pattern in React is for a component to return multiple elements. Fragments let you
+                group a list of children without adding extra nodes to the DOM.</p>
+            <pre class="pre">
+                    <code>
+                        <span class="token"><span class="text-attr">render</span>() {<br>&emsp;return ( <br>&emsp;&emsp;<span class="comment"><</span><span class="attr-name">React</span>.<span class="attr-name">Fragment</span><span class="comment">></span><br>&emsp;&emsp;&emsp;<span class="comment"><</span><span class="attr-name">ChildA</span> /<span class="comment">></span><br>&emsp;&emsp;&emsp;<span class="comment"><</span><span class="attr-name">ChildB</span> /<span class="comment">></span><br>&emsp;&emsp;&emsp;<span class="comment"><</span><span class="attr-name">ChildC</span> /<span class="comment">></span><br>&emsp;&emsp;<span class="comment"><</span>/<span class="attr-name">React</span>.<span class="attr-name">Fragment</span><span class="comment">></span><br>&emsp;);<br>}</span>
+                    </code>
+                </pre>
+
+            <div class="break">
+                <hr>
+            </div>
+
+            <h2 class="text1">Motivation</h2>
+            <p>A common pattern is for a component to return a list of children. Take this example React snippet:</p>
+            <pre class="pre">
+                    <code>
+                        <span class="token">class <span class="text-attr">Table</span> extends <span class="attr-name">React</span>.<span class="attr-name">Component</span> {<br>&emsp;<span class="text-attr">render</span>() {<br>&emsp;&emsp;return ( <br>&emsp;&emsp;&emsp;<span class="comment"><</span>table<span class="comment">></span><br>&emsp;&emsp;&emsp;&emsp;<span class="comment"><</span>tr<span class="comment">></span><br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="comment"><</span><span class="attr-name">Columns</span> /<span class="comment">></span><br>&emsp;&emsp;&emsp;&emsp;<span class="comment"><</span>/tr<span class="comment">></span><br>&emsp;&emsp;&emsp;<span class="comment"><</span>/table<span class="comment">></span><br>&emsp;&emsp;);<br>&emsp;}<br>}</span>
+                    </code>
+                </pre>
+
+            <p><code class="text-highlight1">< Columns /></code>would need to return multiple <code
+                    class="text-highlight1">< td ></code>elements in order for the rendered HTML to be valid. If a
+                parent div was used inside the <code class="text-highlight1">render()</code> of <code
+                    class="text-highlight1">< Columns /></code>, then the resulting HTML will be invalid.</p>
+
+            <pre class="pre">
+                    <code>
+                        <span class="token">class <span class="text-attr">Columns</span> extends <span class="attr-name">React</span>.<span class="attr-name">Component</span> {<br>&emsp;<span class="text-attr">render</span>() {<br>&emsp;&emsp;return ( <br>&emsp;&emsp;&emsp;<span class="comment"><</span>div<span class="comment">></span><br>&emsp;&emsp;&emsp;&emsp;<span class="comment"><</span>td<span class="comment">></span><span class="comment"> Hello </span><span class="comment"><</span>/td<span class="comment">></span><br>&emsp;&emsp;&emsp;&emsp;<span class="comment"><</span>td<span class="comment">></span><span class="comment"> World </span><span class="comment"><</span>/td<span class="comment">></span><br>&emsp;&emsp;&emsp;<span class="comment"><</span>/div<span class="comment">></span><br>&emsp;&emsp;);<br>&emsp;}<br>}</span>
+                    </code>
+                </pre>
+            <p>results in a <span class="text-highlight1">
+                    < Table />
+                </span> output of:</p>
+            <pre class="pre">
+                    <code>
+                        <span class="token"><span class="comment"><</span>table<span class="comment">></span><br>&emsp;<span class="comment"><</span>tr<span class="comment">></span><br>&emsp;&emsp;<span class="comment"><</span>div<span class="comment">></span><br>&emsp;&emsp;&emsp;<span class="comment"><</span>td<span class="comment">></span><span class="comment"> Hello </span><span class="comment"><</span>/td<span class="comment">></span><br>&emsp;&emsp;&emsp;<span class="comment"><</span>td<span class="comment">></span><span class="comment"> World </span><span class="comment"><</span>/td<span class="comment">></span><br>&emsp;&emsp;<span class="comment"><</span>/div<span class="comment">></span><br>&emsp;<span class="comment"><</span>/tr<span class="comment">></span><br><span class="comment"><</span>/table<span class="comment">></span></span>
+                    </code>
+                </pre>
+
+            <p>Fragments solve this problem.</p>
+
+            <div class="break">
+                <hr>
+            </div>
+
+            <h1 id="intro" class="text">Introducing Hooks</h1>
+            <p class="muted">Hooks are a new addition in React 16.8. They let you use state and other React features
+                without writing a class.</p>
+
+            <pre class="pre">
+                    <code>
+                        <span class="token">import <span class="comment">React</span>, { <span class="comment">useSate</span> } from <span class="text1-attr">'react'</span>;</span>
+                        <br>
+                        <span class="token">function <span class="attr-name">Example</span>() { <br>&emsp;<span class="comment">// Declare a new state variable, which we'll call "count"</span><br>&emsp;const [<span class="comment">count</span>, <span class="comment">setCount</span>] = <span class="number">useState</span>(<span class="number">0</span>);<br><br>&emsp;return (<br>&emsp;&emsp;<span class="comment"><</span>div<span class="comment">></span><br>&emsp;&emsp;&emsp;<span class="comment"><</span>p<span class="comment">></span><span class="comment">You clicked</span> { <span class="comment">count</span> } <span class="comment">times</span><span class="comment"><</span>/p<span class="comment">></span> <br>&emsp;&emsp;&emsp;<span class="comment"><</span>button <span class="attr-name">onClick</span> = {()<span class="comment"> =></span> <span class="number">setCount</span>(count + <span class="number">1</span>)}<span class="comment">></span><br>&emsp;&emsp;&emsp;&emsp;<span class="comment">Click me</span><br>&emsp;&emsp;&emsp;<span class="comment"><</span>/button<span class="comment">></span><br>&emsp;&emsp;<span class="comment"><</span>/div<span class="comment">></span><br>&emsp;);<br>}</span>
+                    </code>
+                </pre>
+
+            <p>This new function <code class="text-highlight1">useState</code> is the first “Hook” we'll learn about,
+                but this example is just a teaser. Don't worry if it doesn't make sense yet!</p>
+            <p><span class="bold">You can start learning Hooks on the next page.</span> On this page, we'll continue by
+                explaining why we're adding Hooks to React and how they can help you write great applications.</p>
+
+            <div class="break">
+                <hr>
+            </div>
+            <h2 class="text1">No Breaking Changes</h2>
+            <p>Before we continue, note that Hooks are:</p>
+            <ul>
+                <li>
+                    <sapn class="bold">Completely opt-in.</sapn> You can try Hooks in a few components without rewriting
+                    any existing code. But you don't have to learn or use Hooks right now if you don't want to.
+                </li>
+                <li><span class="bold">100% backwards-compatible.</span> Hooks don't contain any breaking changes.</li>
+                <li><span class="bold">Available now.</span> Hooks are now available with the release of v16.8.0.</li>
+            </ul>
+
+            <p><span class="bold">There are no plans to remove classes from React.</span> You can read more about the
+                gradual adoption strategy for Hooks in the bottom section of this page.</p>
+            <p><span class="bold">Hooks don't replace your knowledge of React concepts.</span> Instead, Hooks provide a
+                more direct API to the React concepts you already know: props, state, context, refs, and lifecycle. As
+                we will show later, Hooks also offer a new powerful way to combine them.</p>
+            <p><span class="bold">If you just want to start learning Hooks, feel free to jump directly to the next page!
+                </span> You can also keep reading this page to learn more about why we're adding Hooks, and how we're
+                going to start using them without rewriting our applications.</p>
+
+            <div class="break">
+                <hr>
+            </div>
+
+            <h1 id="state" class="text">Using the State Hook</h1>
+            <p class="muted">Hooks are a new addition in React 16.8. They let you use state and other React features
+                without writing a class.</p>
+            <p>The <a href="#intro" class="text-highlight">introduction page</a> used this example to get familiar with
+                Hooks:</p>
+
+            <pre class="pre">
+                    <code>
+                        <span class="token">import <span class="comment">React</span>, { <span class="comment">useSate</span> } from <span class="text1-attr">'react'</span>;</span>
+                        <br>
+                        <span class="token">function <span class="attr-name">Example</span>() { <br>&emsp;<span class="comment">// Declare a new state variable, which we'll call "count"</span><br>&emsp;const [<span class="comment">count</span>, <span class="comment">setCount</span>] = <span class="number">useState</span>(<span class="number">0</span>);<br><br>&emsp;return (<br>&emsp;&emsp;<span class="comment"><</span>div<span class="comment">></span><br>&emsp;&emsp;&emsp;<span class="comment"><</span>p<span class="comment">></span><span class="comment">You clicked</span> { <span class="comment">count</span> } <span class="comment">times</span><span class="comment"><</span>/p<span class="comment">></span> <br>&emsp;&emsp;&emsp;<span class="comment"><</span>button <span class="attr-name">onClick</span> = {()<span class="comment"> =></span> <span class="number">setCount</span>(count + <span class="number">1</span>)}<span class="comment">></span><br>&emsp;&emsp;&emsp;&emsp;<span class="comment">Click me</span><br>&emsp;&emsp;&emsp;<span class="comment"><</span>/button<span class="comment">></span><br>&emsp;&emsp;<span class="comment"><</span>/div<span class="comment">></span><br>&emsp;);<br>}</span>
+                    </code>
+                </pre>
+
+            <p>We'll start learning about Hooks by comparing this code to an equivalent class example.</p>
+
+            <div class="break">
+                <hr>
+            </div>
+
+            <h2 class="text1">Equivalent Class Example</h2>
+            <p>If you used classes in React before, this code should look familiar:</p>
+            <pre class="pre">
+                    <code>
+                        <span class="token">class <span class="attr-name">Example </span>extends <span class="attr-name">React</span>.<span class="attr-name">Component </span>{<br>&emsp;<span class="text-attr">constructor</span>(<span class="comment">props</span>) {<br>&emsp;&emsp;&emsp;super(<span class="comment">props</span>);<br>&emsp;&emsp;&emsp;this.<span class="comment">state = </span>{ <br>&emsp;&emsp;&emsp;&emsp;<span class="number">count</span> <span class="comment">:</span> <span class="number">0</span><br>&emsp;&emsp;};<br>&emsp;}</span>
+                        <br>
+                        <span class="token">&emsp;<span class="text-attr">render</span>() {<br>&emsp;&emsp;return (<br>&emsp;&emsp;&emsp;<span class="comment"><</span>div<span class="comment">></span><br>&emsp;&emsp;&emsp;&emsp;<span class="comment"><</span>p<span class="comment">></span><span class="comment">You clicked</span> { this.<span class="comment">state.count</span> } <span class="comment">times</span><span class="comment"><</span>/p<span class="comment">></span> <br>&emsp;&emsp;&emsp;&emsp;<span class="comment"><</span>button <span class="attr-name">onClick</span> = {()<span class="comment"> =></span> this.<span class="number">setState</span>({ <span class="number">count</span>: this.<span class="comment">state.count</span> + <span class="number">1</span> })}<span class="comment">></span><br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="comment">Click me</span><br>&emsp;&emsp;&emsp;&emsp;<span class="comment"><</span>/button<span class="comment">></span><br>&emsp;&emsp;&emsp;<span class="comment"><</span>/div<span class="comment">></span><br>&emsp;&emsp;);<br>&emsp;}<br>}</span>
+                    </code>
+                </pre>
+
+            <p>The state starts as <code class="text-highlight1">{ count: 0 }</code>, and we increment <code
+                    class="text-highlight1">state.count</code> when the user clicks a button by calling <code
+                    class="text-highlight1">this.setState()</code>. We'll use snippets from this class throughout the
+                page.</p>
+
+            <div class="break">
+                <hr>
+            </div>
+
+            <h1 id="effect" class="text">Using the Effect Hook</h1>
+            <p class="muted">Hooks are a new addition in React 16.8. They let you use state and other React features
+                without writing a class.</p>
+            <p>The <em>Effect Hook</em> lets you perform side effects in function components:</p>
+
+            <pre class="pre">
+                    <code>
+                        <span class="token">import <span class="comment">React</span>, { <span class="comment">useSate</span>, <span class="comment">useEffect</span> } from <span class="text1-attr">'react'</span>;</span>
+                        <br>
+                        <span class="token">function <span class="attr-name">Example</span>() { <br>&emsp;const [<span class="comment">count</span>, <span class="comment">setCount</span>] = <span class="number">useState</span>(<span class="number">0</span>);<br><br>&emsp;<span class="comment">// Similar to componentDidMount and componentDidUpdate:</span><br>&emsp;<span class="number">useEffect</span>(() <span class="comment"> => </span>{ <br>&emsp;&emsp;<span class="comment">// Update the document title using the browser API</span><br>&emsp;&emsp;<span class="comment">document</span>.<span class="comment">title = </span> <span class="text1-attr">`You Click </span>${ <span class="comment">count</span> } <span class="text1-attr">times`</span>;<br>&emsp; });<br><br>&emsp;return (<br>&emsp;&emsp;<span class="comment"><</span>div<span class="comment">></span><br>&emsp;&emsp;&emsp;<span class="comment"><</span>p<span class="comment">></span><span class="comment">You clicked</span> { <span class="comment">count</span> } <span class="comment">times</span><span class="comment"><</span>/p<span class="comment">></span> <br>&emsp;&emsp;&emsp;<span class="comment"><</span>button <span class="attr-name">onClick</span> = {()<span class="comment"> =></span> <span class="number">setCount</span>(count + <span class="number">1</span>)}<span class="comment">></span><br>&emsp;&emsp;&emsp;&emsp;<span class="comment">Click me</span><br>&emsp;&emsp;&emsp;<span class="comment"><</span>/button<span class="comment">></span><br>&emsp;&emsp;<span class="comment"><</span>/div<span class="comment">></span><br>&emsp;);<br>}</span>
+                    </code>
+                </pre>
+
+            <div class="break">
+                <hr>
+            </div>
+
+            <h1 id="rule" class="text">Rules of Hooks</h1>
+            <p class="muted">Hooks are a new addition in React 16.8. They let you use state and other React features
+                without writing a class.</p>
+            <p>Hooks are JavaScript functions, but you need to follow two rules when using them. We provide a <a
+                    href="https://www.npmjs.com/package/eslint-plugin-react-hooks" class="text-highlight">linter
+                    plugin</a> to enforce these rules automatically:</p>
+            <h2 class="text1">Only Call Hooks at the Top Level</h2>
+            <p><span class="bold">Don't call Hooks inside loops, conditions, or nested functions.</span> Instead, always
+                use Hooks at the top level of your React function, before any early returns. By following this rule, you
+                ensure that Hooks are called in the same order each time a component renders. That's what allows React
+                to correctly preserve the state of Hooks between multiple <code class="text-highlight1">useState</code>
+                and <code class="text-highlight1">useEffect</code> calls. (If you're curious, we'll explain this in
+                depth below.)</p>
+            <h2 class="text1">Only Call Hooks from React Functions</h2>
+            <p><span class="bold">Don't call Hooks from regular JavaScript functions.</span> Instead, you can:</p>
+            <ul>
+                <li>Call Hooks from React function components.</li>
+                <li>Call Hooks from custom Hooks</li>
+            </ul>
+            <p>By following this rule, you ensure that all stateful logic in a component is clearly visible from its
+                source code.</p>
+
+            <div class="break">
+                <hr>
+            </div>
+
+            <h1 id="over" class="text">Testing Overview</h1>
+            <p class="muted">You can test React components similar to testing other JavaScript code.</p>
+            <p>There are a few ways to test React components. Broadly, they divide into two categories:</p>
+            <ul>
+                <li><span class="bold">Rendering component trees</span> in a simplified test environment and asserting
+                    on their output.</li>
+                <li><span class="bold">Running a complete app</span> in a realistic browser environment (also known as
+                    “end-to-end” tests).</li>
+            </ul>
+
+            <p>This documentation section focuses on testing strategies for the first case. While full end-to-end tests
+                can be very useful to prevent regressions to important workflows, such tests are not concerned with
+                React components in particular, and are out of the scope of this section.</p>
+
+            <h2 class="text1">Tradeoffs</h2>
+            <p>When choosing testing tools, it is worth considering a few tradeoffs:</p>
+            <ul>
+                <li><span class="bold">Iteration speed vs Realistic environment:</span> Some tools offer a very quick
+                    feedback loop between making a change and seeing the result, but don't model the browser behavior
+                    precisely. Other tools might use a real browser environment, but reduce the iteration speed and are
+                    flakier on a continuous integration server.</li>
+                <li><span class="bold">How much to mock:</span> With components, the distinction between a “unit” and
+                    “integration” test can be blurry. If you're testing a form, should its test also test the buttons
+                    inside of it? Or should a button component have its own test suite? Should refactoring a button ever
+                    break the form test?</li>
+            </ul>
+            <p>Different answers may work for different teams and products.</p>
+            <h2 class="text1">Recommended Tools</h2>
+            <p><a href="https://jestjs.io/" class="text-highlight">Jest</a> is a JavaScript test runner that lets you
+                access the DOM via jsdom. While jsdom is only an approximation of how the browser works, it is often
+                good enough for testing React components. Jest provides a great iteration speed combined with powerful
+                features like mocking modules and timers so you can have more control over how the code executes.</p>
+            <p><a href="https://testing-library.com/docs/react-testing-library/intro/" class="text-highlight">React
+                    Testing Library</a> is a set of helpers that let you test React components without relying on their
+                implementation details. This approach makes refactoring a breeze and also nudges you towards best
+                practices for accessibility. Although it doesn't provide a way to “shallowly” render a component without
+                its children, a test runner like Jest lets you do this by mocking.</p>
+
+            <div class="break">
+                <hr>
+            </div>
+
+            <h1 id="envir" class="text">Testing Environments</h1>
+            <p class="muted">This document goes through the factors that can affect your environment and recommendations
+                for some scenarios.</p>
+            <h2 class="text1">Test runners</h2>
+            <p>Test runners like <a href="https://jestjs.io/" class="text-highlight">Jest</a>, <a
+                    href="https://mochajs.org/" class="text-highlight">mocha</a>, <a href="https://github.com/avajs/ava"
+                    class="text-highlight">ava</a> let you write test suites as regular JavaScript, and run them as part
+                of your development process. Additionally, test suites are run as part of continuous integration.</p>
+
+            <ul>
+                <li>Jest is widely compatible with React projects, supporting features like mocked modules and timers,
+                    and jsdom support. If you use Create React App, Jest is already included out of the box with useful
+                    defaults.</li>
+                <li>Libraries like mocha work well in real browser environments, and could help for tests that
+                    explicitly need it.</li>
+                <li>End-to-end tests are used for testing longer flows across multiple pages, and require a different
+                    setup.
+                </li>
+            </ul>
+
+            <h2 class="text1">Mocking a rendering surface</h2>
+            <p>Tests often run in an environment without access to a real rendering surface like a browser. For these
+                environments, we recommend simulating a browser with jsdom, a lightweight browser implementation that
+                runs inside Node.js.</p>
+            <p>In most cases, jsdom behaves like a regular browser would, but doesn't have features like layout and
+                navigation. This is still useful for most web-based component tests, since it runs quicker than having
+                to start up a browser for each test. It also runs in the same process as your tests, so you can write
+                code to examine and assert on the rendered DOM.</p>
+            <p>Just like in a real browser, jsdom lets us model user interactions; tests can dispatch events on DOM
+                nodes, and then observe and assert on the side effects of these actions.</p>
+            <p>A large portion of UI tests can be written with the above setup: using Jest as a test runner, rendered to
+                jsdom, with user interactions specified as sequences of browser events, powered by the <code
+                    class="text-highlight1">act()</code> helper. For example, a lot of React's own tests are written
+                with this combination.</p>
+            <p>If you're writing a library that tests mostly browser-specific behavior, and requires native browser
+                behavior like layout or real inputs, you could use a framework like mocha.</p>
+            <p>In an environment where you can't simulate a DOM (e.g. testing React Native components on Node.js), you
+                could use event simulation helpers to simulate interactions with elements. Alternately, you could use
+                the fireEvent helper from <span class="text-highlight">@testing-library/react-native</span>.</p>
+
+            <div class="break">
+                <hr>
+            </div>
+
+            <h1 id="contribute" class="text">How to Contribute</h1>
+            <p>React is one of Facebook's first open source projects that is both under very active development and is
+                also being used to ship code to everybody on <a href="https://www.facebook.com/"
+                    class="text-highlight">facebook.com</a>. We're still working out the kinks to make contributing to
+                this project as easy and transparent as possible, but we're not quite there yet. Hopefully this document
+                makes the process for contributing clear and answers some questions that you may have.</p>
+            <h2 class="text1">Code of Conduct</h2>
+            <p>Facebook has adopted the Contributor Covenant as its Code of Conduct, and we expect project participants
+                to adhere to it. Please read the full text so that you can understand what actions will and will not be
+                tolerated.</p>
+            <h2 class="text1">Open Development</h2>
+            <p>All work on React happens directly on GitHub. Both core team members and external contributors send pull
+                requests which go through the same review process.</p>
+            <h2 class="text1">Semantic Versioning</h2>
+            <p>React follows semantic versioning. We release patch versions for critical bugfixes, minor versions for
+                new features or non-essential changes, and major versions for any breaking changes. When we make
+                breaking changes, we also introduce deprecation warnings in a minor version so that our users learn
+                about the upcoming changes and migrate their code in advance. Learn more about our commitment to
+                stability and incremental migration in our versioning policy.</p>
+            <p>Every significant change is documented in the changelog file.</p>
+            <h2 class="text1">Branch Organization</h2>
+            <p>Submit all changes directly to the <a href="https://github.com/facebook/react/tree/main"
+                    class="text-highlight">main branch</a>. We don't use separate branches for development or for
+                upcoming releases. We do our best to keep <span class="text-highlight1">main</span> in good shape, with
+                all tests passing.</p>
+            <p>Code that lands in <span class="text-highlight1">main</span> must be compatible with the latest stable
+                release. It may contain additional features, but no breaking changes. We should be able to release a new
+                minor version from the tip of <span class="text-highlight1">main</span> at any time.</p>
+            <h2 class="text1">Feature Flags</h2>
+            <p>To keep the <span class="text-highlight1">main</span> branch in a releasable state, breaking changes and
+                experimental features must be gated behind a feature flag.</p>
+            <p>Feature flags are defined in <span class="text-highlight">packages/shared/ReactFeatureFlags.js</span>.
+                Some builds of React may enable different sets of feature flags; for example, the React Native build may
+                be configured differently than React DOM. These flags are found in <span
+                    class="text-highlight">packages/shared/forks</span>. Feature flags are statically typed by Flow, so
+                you can run yarn flow to confirm that you've updated all the necessary files.</p>
+            <p>React's build system will strip out disabled feature branches before publishing. A continuous integration
+                job runs on every commit to check for changes in bundle size. You can use the change in size as a signal
+                that a feature was gated correctly.</p>
+            <h2 class="text1">Bugs</h2>
+            <p class="muted">Where to Find Known Issues</p>
+            <p>We are using <a href="https://github.com/facebook/react/issues" class="text-highlight">GitHub Issues</a>
+                for our public bugs. We keep a close eye on this and try to make it clear when we have an internal fix
+                in progress. Before filing a new task, try to make sure your problem doesn't already exist.</p>
+            <p class="muted">Reporting New Issues</p>
+            <p>The best way to get your bug fixed is to provide a reduced test case. This JSFiddle template is a great
+                starting point.</p>
+            <p class="muted">Security Bugs</p>
+            <p>Facebook has a bounty program for the safe disclosure of security bugs. With that in mind, please do not
+                file public issues; go through the process outlined on that page.</p>
+            <h2 class="text1">How to Get in Touch</h2>
+            <ul>
+                <li>IRC: <a href="https://webchat.freenode.net/?channels=reactjs" class="text-highlight">#reactjs on
+                        freenode</a></li>
+                <li><a href="https://reactjs.org/community/support.html#popular-discussion-forums"
+                        class="text-highlight">Discussion forums</a></li>
+            </ul>
+
+            <div class="break">
+                <hr>
+            </div>
+
+            <h1 class="text">FAQS</h1>
+            <h1 class="text">Babel, JSX, and Build Steps</h1>
+            <h2 class="text1">Do I need to use JSX with React?</h2>
+            <p>No! Check out <a href="https://reactjs.org/docs/react-without-jsx.html" class="text-highlight">“React
+                    Without JSX”</a> to learn more.</p>
+            <h2 class="text1">Do I need to use ES6 (+) with React?</h2>
+            <p>No! Check out <a href="https://reactjs.org/docs/react-without-es6.html" class="text-highlight">“React
+                    Without ES6”</a> to learn more.</p>
+            <h2 class="text1">How can I write comments in JSX?</h2>
+            <pre class="pre">
+                    <code>
+                        <span class="token"><span class="comment"><</span>div<span class="comment">></span><br>&emsp;{ <span class="comment">/* Comment goes here */</span> } <br>&emsp;<span class="comment">Hello</span>, { <span class="comment">name</span> } <span class="comment">!</span><br><span class="comment"><</span>/div<span class="comment">></span></span>
+                    </code>
+                </pre>
+            <pre class="pre m-1">
+                    <code>
+                        <span class="token"><span class="comment"><</span>div<span class="comment">></span><br>&emsp;{ <span class="comment">/* It also works <br>&emsp; for multi-line comments. */</span> } <br>&emsp;<span class="comment">Hello</span>, { <span class="comment">name</span> } <span class="comment">!</span><br><span class="comment"><</span>/div<span class="comment">></span></span>
+                    </code>
+                </pre>
+
+            <div class="break">
+                <hr>
+            </div>
+
+            <h1 class="text">File Structure</h1>
+            <h2 class="text1">Is there a recommended way to structure React projects?</h2>
+            <p>React doesn't have opinions on how you put files into folders. That said there are a few common
+                approaches popular in the ecosystem you may want to consider.</p>
+            <p class="muted">Grouping by features or routes</p>
+            <p>One common way to structure projects is to locate CSS, JS, and tests together inside folders grouped by
+                feature or route.</p>
+            <pre class="pre">
+                    <code>
+                        <span class="comment">
+                            common/
+                            <br>&emsp;Avatar.js
+                            <br>&emsp;Avatar.css
+                            <br>&emsp;APIUtils.js
+                            <br>&emsp;APIUtils.test.js
+                            <br>feed/
+                            <br>&emsp;index.js
+                            <br>&emsp;Feed.js
+                            <br>&emsp;Feed.css
+                            <br>&emsp;FeedStory.js
+                            <br>&emsp;FeedStory.test.js
+                            <br>&emsp;FeedAPI.js
+                            <br>profile/
+                            <br>&emsp;index.js
+                            <br>&emsp;Profile.js
+                            <br>&emsp;ProfileHeader.js
+                            <br>&emsp;ProfileHeader.css
+                            <br>&emsp;ProfileAPI.js
+                        </span>
+                    </code>
+                </pre>
+            <p>The definition of a “feature” is not universal, and it is up to you to choose the granularity. If you
+                can't come up with a list of top-level folders, you can ask the users of your product what major parts
+                it consists of, and use their mental model as a blueprint.</p>
+
+            <p class="muted">Grouping by file type</p>
+            <p>Another popular way to structure projects is to group similar files together, for example:</p>
+
+            <pre class="pre">
+                    <code>
+                        <span class="comment">
+                            api/
+                            <br>&emsp;APIUtils.js
+                            <br>&emsp;APIUtils.test.js
+                            <br>&emsp;ProfileAPI.js
+                            <br>&emsp;UserAPI.js
+                            <br>&emsp;FeedAPI.js
+                            <br>components/
+                            <br>&emsp;Avatar.js
+                            <br>&emsp;Avatar.css
+                            <br>&emsp;Feed.js
+                            <br>&emsp;Feed.css
+                            <br>&emsp;FeedStory.js
+                            <br>&emsp;FeedStory.test.js
+                            <br>&emsp;Profile.js
+                            <br>&emsp;ProfileHeader.js
+                            <br>&emsp;ProfileHeader.css
+                        </span>
+                    </code>
+                </pre>
+
+
+        </div>
+    </section>
+
+    <!-- App JS -->
+    <script src="app.js"></script>
+</body>
+
+</html>
